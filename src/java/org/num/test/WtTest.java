@@ -16,6 +16,7 @@ public class WtTest {
         //init(null, "org.num.controller");
         Map<String,String> map = InitAnnotation.init("org.num.controller");
         for (String item: map.keySet()) {
+        	System.out.println(item + "----" + map.get(item));
             System.out.println(item + "----" + map.get(item));
         }
     }
