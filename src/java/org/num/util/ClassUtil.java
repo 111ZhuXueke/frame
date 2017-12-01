@@ -187,7 +187,6 @@ public class ClassUtil {
             for (int i = 0; i < sericeArray.length; i++) {
                 sericeArray[i] = StringHandle.capitalFirstChar(sericeArray[i]);
             }
-            System.out.println(sericeArray[0]);
             for (int i = 0; i < controllerArray.length; i++) {
                 Class clazz = Class.forName(newPackagePath + controllerArray[i]);
                 Field[] field = clazz.getDeclaredFields();
@@ -200,9 +199,6 @@ public class ClassUtil {
                                 field[j].setAccessible(true);
                                 //键: controller 中注入的属性  值: 属性对应的子类实例
                                 map.put(field[j].getName(),sericeClazz.newInstance());
-//                            field[i].set(obj ,sericeClazz.newInstance());
-//                            Object ser= clazz.getMethod("getAll").invoke(obj);
-//                            System.out.print(ser);
                             }
                         }
                     }

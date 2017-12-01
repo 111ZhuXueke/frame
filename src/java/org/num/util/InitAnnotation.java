@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class InitAnnotation {
     public static Map<String,String> annotationInfos = null;
-    public static synchronized Map<String,String> getMap(){
+    public static Map<String,String> getMap(){
         return annotationInfos;
     }
     /**
