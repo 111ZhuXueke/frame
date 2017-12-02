@@ -4,7 +4,6 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-
   <servlet>
     <servlet-name>InitServlet</servlet-name>
     <servlet-class>org.num.customServlet.InitServlet</servlet-class>
@@ -12,8 +11,9 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>InitServlet</servlet-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/InitServlet</url-pattern>
   </servlet-mapping>
+
 
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
