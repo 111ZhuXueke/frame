@@ -1,8 +1,5 @@
 package org.num.tomcatRun.demo02;
 
-import org.num.tomcatRun.demo01.Request;
-import org.num.tomcatRun.demo01.Response;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,9 +50,9 @@ public class HttpServer {
 
                 //判断访问的路径是否包含servlet关键字
                 if(request.getServletPath().startsWith("/servlet/")){
-
+                    new ServletProcessor1().process(request,response);
                 }else{
-
+                    new StaticResourceProcessor().process(request,response);
                 }
                 socket.close();
                 // 判断输入的路径是否是关闭命令
