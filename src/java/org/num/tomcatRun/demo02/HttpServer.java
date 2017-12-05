@@ -10,7 +10,7 @@ import java.net.Socket;
 
 /**
  * 主线程
- * @author : zhuxueke
+ * @author : xp
  * @since : 2017-12-01 15:50
  **/
 public class HttpServer {
@@ -46,7 +46,7 @@ public class HttpServer {
                 //定向资源
                 Response response = new Response(outputStream);
                 response.setRequest(request);
-                response.sendStaticResource();
+                //response.sendStaticResource();  去掉
 
                 //判断访问的路径是否包含servlet关键字
                 if(request.getServletPath().startsWith("/servlet/")){

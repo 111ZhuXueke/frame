@@ -35,6 +35,7 @@ public class ServletProcessor1 {
             System.out.println(e.toString());
         }
         Servlet servlet = null;
+
         try {
             servlet = (Servlet) myClass.newInstance();
             servlet.service((ServletRequest) request,
