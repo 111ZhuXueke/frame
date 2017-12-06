@@ -14,6 +14,7 @@ import java.net.Socket;
  * @since : 2017-12-01 15:50
  **/
 public class HttpServer {
+
     // 设置静态资源路径
     public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
     // 停止命令
