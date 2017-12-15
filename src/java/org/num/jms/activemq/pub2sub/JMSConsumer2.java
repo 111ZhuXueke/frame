@@ -6,7 +6,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import javax.jms.*;
 
 /**
- * 消费者消费 - 点对点模式
+ * 消费者消费 - 发布-订阅模式
  * @author : xp
  * @since : 2017-12-15 14:51
  **/

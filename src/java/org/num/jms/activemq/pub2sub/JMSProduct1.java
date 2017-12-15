@@ -6,7 +6,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import javax.jms.*;
 
 /**
- * 消息生产者 - 消息发布者
+ * 消息生产者 - 消息发布者 发布-订阅模式
  * @author : xp
  * @since : 2017/12/15 15:39
  */
