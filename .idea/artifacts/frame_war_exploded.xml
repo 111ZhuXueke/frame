@@ -12,6 +12,7 @@
           <element id="library" level="project" name="Maven: javax.websocket:javax.websocket-api:1.1" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.4" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.25" />
+          <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.11.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
